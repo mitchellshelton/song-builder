@@ -1,0 +1,33 @@
+@mixin fontsize($number) {
+  font-size: $number + px;
+  font-size: $number/$base-font-size + rem;
+}
+
+@mixin gradient-hor($color1, $color2) {
+  background: $color2;
+  background: linear-gradient(to bottom,  $color1 0%, $color2 100%);
+}
+
+@mixin gradient-vert($color1, $color2) {
+  background: $color2;
+  background: linear-gradient(to right,  $color1 0%,$color2 100%);
+}
+
+@mixin transform($var) {
+  transform: $var;
+}
+
+@mixin transition($var: all .3s ease) {
+  transition: $var;
+}
+
+@mixin breakpoint($bp, $no-query: false) {
+  @media (min-width: #{$bp}) {
+    @content;
+  }
+  @if $no-query != false {
+    #{$no-query} & {
+      @content;
+    }
+  }
+}

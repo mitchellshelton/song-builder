@@ -1,0 +1,85 @@
+.skip-link {
+  @extend %visuallyhidden;
+
+  &:focus {
+    @extend %bold;
+    position: static;
+    display: block;
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    clip: auto;
+    height: auto;
+    overflow: visible;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-wrapper{
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 2em;
+
+  iframe{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.visuallyhidden {
+  @extend %visuallyhidden;
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+// Define the serif font
+$c-font-name: 'crimsontext-roman';
+@font-face {
+ font-family: '#{$c-font-name}';
+ src:url('../fonts/#{$c-font-name}.eot');
+ src:url('../fonts/#{$c-font-name}.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/#{$c-font-name}.woff') format('woff'),
+     url('../fonts/#{$c-font-name}.ttf') format('truetype'),
+     url('../fonts/#{$c-font-name}.svg##{$c-font-name}') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+// Define the sans-serif font
+$c-font-name: 'FrancoisOne';
+@font-face {
+ font-family: '#{$c-font-name}';
+ src:url('../fonts/#{$c-font-name}.eot');
+ src:url('../fonts/#{$c-font-name}.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/#{$c-font-name}.woff') format('woff'),
+     url('../fonts/#{$c-font-name}.ttf') format('truetype'),
+     url('../fonts/#{$c-font-name}.svg##{$c-font-name}') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+// Define the icon font
+$c-font-name: 'mitchellshelton-icons';
+@font-face {
+ font-family: '#{$c-font-name}';
+ src:url('../fonts/#{$c-font-name}.eot');
+ src:url('../fonts/#{$c-font-name}.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/#{$c-font-name}.woff') format('woff'),
+     url('../fonts/#{$c-font-name}.ttf') format('truetype'),
+     url('../fonts/#{$c-font-name}.svg##{$c-font-name}') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}

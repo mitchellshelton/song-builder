@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+}
+
+.header-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.site-title {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+.site-title-link {
+  @include fontsize(40);
+  @extend %serif;
+  color: $c-white;
+  line-height: 1.5;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba($c-black, 0.8);
+  @include breakpoint($bp-small, $no-query) {
+    @include fontsize(72);
+  }
+}
+
+.description-section {
+  position: relative;
+  z-index: 5;
+  padding: 1em 0;
+  width: 100%;
+  background-color: $c-black;
+  background-color: rgba($c-black, 0.8);
+  text-align: center;
+  line-height: 1;
+}
+
+.description-title {
+  @include fontsize(20);
+  @extend %sans-serif;
+  @extend %bold;
+  margin: 0;
+  letter-spacing: 2px;
+  color: $c-white;
+  @include breakpoint($bp-small, $no-query) {
+    @include fontsize(30);
+  }
+}
+
+.description-location {
+  @include fontsize(16);
+  @extend %sans-serif;
+  margin: 0;
+  color: $c-light-grey;
+  line-height: 1.5;
+  @include breakpoint($bp-small, $no-query) {
+    @include fontsize(24);
+  }
+}

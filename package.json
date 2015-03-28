@@ -1,0 +1,16 @@
+{
+  "name": "mitchellshelton-com",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "description": "npm config for mitchellshelton.com",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mitchell R.K. Shelton",
+  "license": "ISC"
+}

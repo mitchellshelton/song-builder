@@ -1,0 +1,44 @@
+// Colors
+$c-white: #ffffff;
+$c-black: #000000;
+$c-light-grey: #cccccc;
+$c-dark-grey: #333333;
+
+// Social Media Colors
+$c-linkedin-text: #007bb6;
+$c-linkedin-bg: #efefef;
+$c-github-text: #000000;
+$c-github-bg: #efefef;
+$c-dribbble-text: #ea4c89;
+$c-dribbble-bg: #efefef;
+$c-flickr-text: #ff0084;
+$c-flickr-bg: #efefef;
+$c-twitter-text: #00aced;
+$c-twitter-bg: #efefef;
+$c-facebook-text: #3b5998;
+$c-facebook-bg: #efefef;
+$c-googleplus-text: #dd4b39;
+$c-googleplus-bg: #efefef;
+$c-blogger-text: #fb8f3d;
+$c-blogger-bg: #efefef;
+$c-tumblr-text: #32506d;
+$c-tumblr-bg: #efefef;
+
+
+// Base Font Size
+$base-font-size: 16;
+
+// Pixel to EMs conversion
+@function px-to-em($px, $denominator: $base-font-size) {
+  @return $px / $denominator * 1em;
+}
+
+// Breakpoints
+$bp-tiny: px-to-em(500);
+$bp-small: px-to-em(960);
+$bp-med: px-to-em(1060);
+
+// The max-width of the stage on full desktop
+$max-stage-width: px-to-em(1024);
+
+$no-query: '.no-mediaqueries';

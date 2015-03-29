@@ -1,0 +1,39 @@
+##
+# Ignore project specifically named files
+##
+node_modules*
+Gemfile.lock
+
+##
+# Ignore paths that contain user-generated content.
+##
+*.sublime-workspace
+*.sublime-project
+
+##
+# Ignore sass related files #
+##
+.sass-cache
+.sass-cache*
+.sass-cache/*
+*.scssc
+
+##
+# Logs and databases #
+##
+*.log
+*.sql
+
+##
+# OS generated files #
+##
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+##
+# Vim generated files #
+##
+*.un~

@@ -46,7 +46,7 @@ img {
 }
 
 // Define the serif font
-$c-font-name: 'crimsontext-roman';
+$c-font-name: 'RobotoSlab';
 @font-face {
  font-family: '#{$c-font-name}';
  src:url('../fonts/#{$c-font-name}.eot');
@@ -59,7 +59,7 @@ $c-font-name: 'crimsontext-roman';
 }
 
 // Define the sans-serif font
-$c-font-name: 'FrancoisOne';
+$c-font-name: 'MartelSans';
 @font-face {
  font-family: '#{$c-font-name}';
  src:url('../fonts/#{$c-font-name}.eot');
@@ -72,7 +72,7 @@ $c-font-name: 'FrancoisOne';
 }
 
 // Define the icon font
-$c-font-name: 'mitchellshelton-icons';
+$c-font-name: 'elektron-song-builder-icons';
 @font-face {
  font-family: '#{$c-font-name}';
  src:url('../fonts/#{$c-font-name}.eot');

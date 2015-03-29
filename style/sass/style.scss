@@ -1,10 +1,9 @@
 @import 'vendor/normalize';
+@import 'vendor/formalize';
 @import 'variables';
 @import 'mixins';
 @import 'extendables';
 @import 'helpers';
-@import 'layout/main';
 @import 'layout/header';
-@import 'layout/connect';
-@import 'layout/projects';
+@import 'layout/main';
 @import 'layout/footer';

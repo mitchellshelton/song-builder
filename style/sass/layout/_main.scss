@@ -1,14 +1,8 @@
 body {
   @extend %sans-serif;
   @include fontsize($base-font-size);
-  @include transition();
-  background: url('../images/hero.jpg');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: $c-white;
-  color: $c-black;
+  background-color: $c-off-white;
+  color: $c-off-black;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -17,4 +11,131 @@ body {
 html,
 body {
   height: 100%;
+}
+
+.main {
+
+}
+
+.main-content {
+
+}
+
+// Testing skrollr stuff
+.header {
+  background-color: $c-off-white;
+  color: $c-off-black;
+  position: fixed;
+  width: 100%;
+  display: block;
+  z-index: 99;
+}
+
+.header-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.title-slide-background,
+.intro-slide-background,
+.builder-slide-background,
+.footer-background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.title-slide-background {
+  background-image: url('../images/elektron-anim-01.gif');
+}
+
+.intro-slide-background {
+  background-image: url('../images/elektron-bg-02.jpg');
+}
+
+.builder-slide-background {
+  background-image: url('../images/elektron-bg-05.jpg');
+}
+
+.title-slide-content,
+.intro-slide-content,
+.builder-slide-content {
+  background-color: $c-black;
+  background-color: rgba($c-black, 0.8);
+  color: $c-white;
+  text-align: center;
+  padding: 10em 1em 10em 1em;
+  @include breakpoint($bp-tiny) {
+    padding: 15em 5em 15em 5em;
+  }
+}
+
+.intro-slide-content,
+.builder-slide-content {
+  padding: 1em;
+  @include breakpoint($bp-tiny) {
+    padding: 5em;
+  }
+}
+
+.site-title,
+.title-slide-title,
+.intro-slide-title,
+.builder-slide-title {
+  @include fontsize(32);
+  @extend %serif;
+  @extend %bold;
+  @include breakpoint($bp-tiny) {
+    @include fontsize(48);
+  }
+}
+
+.site-title {
+  @include fontsize(24);
+  text-align: center;
+  @include breakpoint($bp-tiny) {
+    text-align: left;
+    padding-left: 1em;
+  }
+}
+
+.intro-slide-description {
+  text-align: left;
+  line-height: 1.8;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 400px;
+}
+
+.builder-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.builder {
+  padding: 1em;
+  text-align: left;
+}
+
+.footer {
+  background-color: $c-black;
+}
+
+.footer-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.footer-copyright {
+  margin: 0;
+  padding: 2em;
+  text-align: center;
+  color: $c-off-white;
 }

@@ -1,23 +1,7 @@
 .footer {
-  @extend %clearfix;
-  position: relative;
-  z-index: 5;
-  bottom: 0;
-  width: 100%;
-  background-color: $c-black;
-  background-color: rgba($c-black, 0.8);
+
 }
 
 .footer-content {
-  @extend %clearfix;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1024px;
-}
 
-.footer-copyright {
-  @include fontsize(14);
-  padding: 1em 0;
-  color: $c-white;
-  text-align: center;
 }

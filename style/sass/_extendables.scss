@@ -22,7 +22,7 @@
 }
 
 %icon {
-  font-family: 'mitchellshelton-icons';
+  font-family: 'elektron-song-builder-icons';
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -33,12 +33,12 @@
 }
 
 %serif {
-  font-family: 'crimson-roman', serif;
+  font-family: 'RobotoSlab', serif;
   -webkit-font-smoothing: antialiased;
 }
 
 %sans-serif {
-  font-family: 'FrancoisOne', sans-serif;
+  font-family: 'MartelSans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -50,47 +50,27 @@
   font-style: italic;
 }
 
-%googleplus {
+%music-icon {
   @extend %icon;
   content: "\e600";
 }
 
-%facebook {
+%github-icon {
   @extend %icon;
   content: "\e601";
 }
 
-%twitter {
+%drupal-icon {
   @extend %icon;
   content: "\e602";
 }
 
-%flickr {
+%spotify-icon {
   @extend %icon;
   content: "\e603";
 }
 
-%dribbble {
+%soundcloud-icon {
   @extend %icon;
   content: "\e604";
-}
-
-%github {
-  @extend %icon;
-  content: "\e605";
-}
-
-%blogger {
-  @extend %icon;
-  content: "\e606";
-}
-
-%tumblr {
-  @extend %icon;
-  content: "\e607";
-}
-
-%linkedin {
-  @extend %icon;
-  content: "\e608";
 }

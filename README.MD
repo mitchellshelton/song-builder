@@ -28,3 +28,47 @@
 
 ## Process
 
+> Notes to build out the process
+
+---
+
+- Machinedrum
+  - Default Drum Kit Layout
+- Monomachine
+  - Track 1: Backing
+  - Track 2: Bass
+  - Track 3: Melody 1
+  - Track 4: Melody 2
+  - Track 5: Melody 3
+  - Track 6: Machinedrum Thru
+
+- Timing Breakdown
+  - 16 Steps/Measure
+  - 4 Measures/Pattern
+  - 64 Total Steps/Pattern
+  - 120 BPM
+  - 4 Beats/Measure
+  - 1 Measure/2 Seconds
+  - 3 Minutes = 180 Seconds = 90 Measures
+
+- Instrument Parts
+  - Backing
+  - Bass
+  - Melody 1
+  - Melody 2
+  - Melody 3
+  - Kick
+  - Percussion
+
+- Song Structure Parts
+  - Intro: Kick and Backing
+  - Verse 1: Kick, Percussion, Bass, Backing, and Melody 1
+  - Verse 2: Kick, Percussion, Bass, Backing, and Melody 2
+  - Verse 3: Kick, Percussion, Bass, Backing, and Melody 3
+  - Verse 4: Kick, Percussion, Bass, Backing, Melody 1, and Melody 3
+  - Chorus: Kick, Percussion, Bass, Backing, Melody 1, Melody 2, and Melody 3
+  - Bridge: Bass and Percussion
+  - Outro: Kick and Backing
+
+---
+

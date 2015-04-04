@@ -99,5 +99,3 @@
 - Output of the generator is done in the form of arrays displayed in tables. Notes then need to be manually entered into the Machinedrum and Monomachine. An automated export feature is not planned at this time.
 
 *This is simple display work*
-
-Testing deployment stuff!

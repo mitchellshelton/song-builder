@@ -72,3 +72,30 @@
 
 ---
 
+> Section One - The Progression
+- First we need to create the progression. A few parameters are needed to generate the progression. This returns an array of chord triads for the generated progression.
+
+1. Select Note Value
+2. Select Note Quality
+3. Select Progression Duration
+
+  - *Much of this section is already complete*
+
+> Section Two - Song Parts
+- Next we take the progression and break it down into Instrument Parts
+
+1. Kick and Percussion
+  - Multiple basic Kick, Snare, and HiHat combinations will be offered. Since all notes and accents are determined by the placement of the kick and snare this must be selected first. A alternative melody oriented percussion track will also be available.
+2. Backing
+  - Full Chorded Notes would usually be called for here. Due to the use of the Monomachine this isn't possible without using 3 channels. An optional machine is provided that simulates a chord. This limitation on sound is not always acceptable for the desired results. An alternative option will be to use the perfect fifth note from each triad.
+3. Bass
+  - The bass uses a repeated root note from the triad that follows the kick drum. An alternative variation allowing for a alternative root and third will also be available.
+4. Melody 1, 2, and 3
+  - Alternative methods of melody generation need to be created. Melodies will be accented based on Kick and Snare placement. Likely methods of generation involve spreading arpeggios across all three melodies so that each step is filled with a note from an alternating melody track.
+
+  - *A bulk of the project work takes place here*
+
+> Section Three - Output
+- Output of the generator is done in the form of arrays displayed in tables. Notes then need to be manually entered into the Machinedrum and Monomachine. An automated export feature is not planned at this time.
+
+  - *This is simple display work*

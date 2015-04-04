@@ -79,7 +79,7 @@
 2. Select Note Quality
 3. Select Progression Duration
 
-  - *Much of this section is already complete*
+*Much of this section is already complete*
 
 > Section Two - Song Parts
 - Next we take the progression and break it down into Instrument Parts
@@ -93,9 +93,9 @@
 4. Melody 1, 2, and 3
   - Alternative methods of melody generation need to be created. Melodies will be accented based on Kick and Snare placement. Likely methods of generation involve spreading arpeggios across all three melodies so that each step is filled with a note from an alternating melody track.
 
-  - *A bulk of the project work takes place here*
+*A bulk of the project work takes place here*
 
 > Section Three - Output
 - Output of the generator is done in the form of arrays displayed in tables. Notes then need to be manually entered into the Machinedrum and Monomachine. An automated export feature is not planned at this time.
 
-  - *This is simple display work*
+*This is simple display work*

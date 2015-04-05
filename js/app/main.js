@@ -2,8 +2,22 @@
 main();
 
 function main() {
+  // Page setup
+  setup();
   // Run the builder
   builder();
+}
+
+function setup() {
+  // jQuery Actions
+  jQuery(document).ready(function ($) {
+
+    $('.navigation-toggle a').click(function() {
+      $('.navigation').toggleClass('hidden');
+      return false;
+    });
+
+  });
 }
 
 function builder() {

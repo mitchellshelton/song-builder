@@ -21,7 +21,6 @@ body {
 
 }
 
-// Testing skrollr stuff
 .header {
   background-color: $c-off-white;
   color: $c-off-black;
@@ -37,9 +36,89 @@ body {
   max-width: 1024px;
 }
 
-.title-slide-background,
-.intro-slide-background,
-.builder-slide-background,
+.site-title {
+  float: left;
+  padding-left: 1em;
+  a {
+    @include fontsize(28);
+    @extend %serif;
+    @extend %bold;
+    text-decoration: none;
+    color: $c-off-black;
+  }
+  @include breakpoint($bp-tiny) {
+
+    a {
+      @include fontsize(28);
+    }
+  }
+}
+
+.navigation-toggle {
+  float: right;
+  line-height: 5;
+  margin-right: 1em;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $c-off-black;
+  }
+  @include breakpoint($bp-tiny) {
+    display: none;
+  }
+}
+
+.navigation {
+  @include breakpoint($bp-tiny) {
+    float: right;
+  }
+  &.hidden {
+    display: none;
+    @include breakpoint($bp-tiny) {
+      display: block;
+    }
+  }
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  @include breakpoint($bp-tiny) {
+    clear: none;
+    display: block;
+  }
+}
+
+.navigation-item {
+  list-style-type: none;
+  margin-right: 1em;
+  @include breakpoint($bp-tiny) {
+    float: left;
+    padding: 1.5em 0;
+  }
+}
+
+.navigation-link {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $c-off-black;
+  display: block;
+  padding: 1em;
+  &:hover {
+    @include transition();
+    color: $c-black;
+  }
+  @include breakpoint($bp-tiny) {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.title-section-background,
+.intro-section-background,
+.builder-section-background,
 .footer-background {
   background-position: center center;
   background-repeat: no-repeat;
@@ -49,21 +128,21 @@ body {
   width: 100%;
 }
 
-.title-slide-background {
+.title-section-background {
   background-image: url('../images/elektron-anim-01.gif');
 }
 
-.intro-slide-background {
+.intro-section-background {
   background-image: url('../images/elektron-bg-02.jpg');
 }
 
-.builder-slide-background {
+.builder-section-background {
   background-image: url('../images/elektron-bg-05.jpg');
 }
 
-.title-slide-content,
-.intro-slide-content,
-.builder-slide-content {
+.title-section-content,
+.intro-section-content,
+.builder-section-content {
   background-color: $c-black;
   background-color: rgba($c-black, 0.8);
   color: $c-white;
@@ -74,18 +153,17 @@ body {
   }
 }
 
-.intro-slide-content,
-.builder-slide-content {
+.intro-section-content,
+.builder-section-content {
   padding: 1em;
   @include breakpoint($bp-tiny) {
     padding: 5em;
   }
 }
 
-.site-title,
-.title-slide-title,
-.intro-slide-title,
-.builder-slide-title {
+.title-section-title,
+.intro-section-title,
+.builder-section-title {
   @include fontsize(32);
   @extend %serif;
   @extend %bold;
@@ -103,7 +181,7 @@ body {
   }
 }
 
-.intro-slide-description {
+.intro-section-description {
   text-align: left;
   line-height: 1.8;
   margin: 0 auto;

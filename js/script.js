@@ -12,14 +12,10 @@ requirejs.config({
 requirejs([
   'jquery.min',
   'modernizr.min',
-  'jquery.formalize.min',
-  'skrollr.min'
+  'jquery.formalize.min'
 ],
-function ($, modernizr, formalize, skrollr) {
+function ($, modernizr, formalize) {
   // All libraries loaded
-
-  // Initialize Skrollr
-  var s = skrollr.init();
 });
 
 // Load the main application

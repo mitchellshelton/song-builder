@@ -12,48 +12,41 @@
 
 <a href="#main" class="skip-link" id="skip-to-main">Skip to main content</a>
 
-<header id="header" class="header"
-  data-top="opacity: 0"
-  data--50p-bottom="opacity: 1; margin-bottom: 3em;"
-  data-anchor-target="#title-slide"
->
+<div id="home"></div>
+<header id="header" class="header">
   <div class="header-content">
-    <h1 class="site-title">Song Builder</h1>
+    <h1 class="site-title"><a href="#home">Song Builder</a></h1>
+    <div class="navigation-toggle"><a href="#">Menu</a></div>
+    <div class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item"><a class="navigation-link" href="#home">Home</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#intro-section">Introduction</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#builder-section">Builder</a></li>
+      </ul>
+    </div>
   </div>
 </header>
 
 <main id="main" class="main">
 
-  <section id="title-slide" class="title-slide">
-    <div class="title-slide-background">
-    <div class="title-slide-container"
-      data-center="opacity: 1"
-      data-top="opacity: 0"
-      data-anchor-target="#title-slide h2"
-    >
-      <div class="title-slide-content">
-        <h2 class="title-slide-title">Song Builder</h2>
-        <div class="title-slide-description">
+  <section id="title-section" class="title-section">
+    <div class="title-section-background">
+      <div class="title-section-content">
+        <h2 class="title-section-title">Song Builder</h2>
+        <div class="title-section-description">
           <p>
             A simple song structure builder for the Elektron Machinedrum and Elektron Monomachine.
           </p>
         </div>
       </div>
     </div>
-    </div>
   </section>
 
-  <section id="intro-slide" class="intro-slide">
-    <div class="intro-slide-background">
-    <div class="intro-slide-container">
-      <div class="intro-slide-content"
-        data-top="opacity: 1;"
-        data-center="opacity: 1"
-        data--400-bottom="opacity: 0;"
-        data-anchor-target="#intro-slide .intro-slide-description"
-      >
-        <h2 class="intro-slide-title">Introduction</h2>
-        <div class="intro-slide-description">
+  <section id="intro-section" class="intro-section">
+    <div class="intro-section-background">
+      <div class="intro-section-content">
+        <h2 class="intro-section-title">Introduction</h2>
+        <div class="intro-section-description">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non cursus sapien,
             et cursus risus. Duis in tincidunt ipsum, vitae sodales lectus. Quisque iaculis ante
@@ -93,37 +86,28 @@
           </p>
         </div>
       </div>
-
-    </div>
     </div>
   </section>
 
-  <section id="builder-slide" class="builder-slide">
-    <div class="builder-slide-background">
-    <div class="builder-slide-container">
-      <div class="builder-slide-content">
-        <h2 class="builder-slide-title">Builder</h2>
+  <section id="builder-section" class="builder-section">
+    <div class="builder-section-background">
+      <div class="builder-section-content">
+        <h2 class="builder-section-title">Builder</h2>
         <div class="builder-wrapper">
           <div class="builder"></div>
         </div>
       </div>
     </div>
-    </div>
   </section>
 
-  <div class="main-content">
-  </div>
 </main>
 
 <footer id="footer" class="footer">
   <div class="footer-content">
-    <p class="footer-copyright">&copy;2015 Mitchell R.K. Shelton</p>
+    <p class="footer-copyright">&copy;<?php print date('Y'); ?> Mitchell R.K. Shelton</p>
   </div>
 </footer>
 
 <script data-main="js/script" src="js/require.js"></script>
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/lib/ie/skrollr.ie.min.js"></script>
-<![endif]-->
 </body>
 </html>

@@ -17,7 +17,7 @@
   <div class="header-content">
     <h1 class="site-title"><a href="#home">Song Builder</a></h1>
     <div class="navigation-toggle"><a href="#">Menu</a></div>
-    <div class="navigation">
+    <div class="navigation hidden">
       <ul class="navigation-list">
         <li class="navigation-item"><a class="navigation-link" href="#home">Home</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#intro-section">Introduction</a></li>

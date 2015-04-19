@@ -1,5 +1,6 @@
 // Configure require.js and define directories
 requirejs.config({
+  urlArgs: "v=" + (new Date()).getTime(),
   // Third party libraries
   baseUrl: 'js/lib',
   // Application path

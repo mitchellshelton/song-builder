@@ -872,10 +872,12 @@ body {
   background-image: url("../images/elektron-anim-01.gif"); }
 
 .intro-section-background {
-  background-image: url("../images/elektron-bg-02.jpg"); }
+  background-image: url("../images/elektron-bg-02.jpg");
+  background-position: center 0; }
 
 .builder-section-background {
-  background-image: url("../images/elektron-bg-05.jpg"); }
+  background-image: url("../images/elektron-bg-05.jpg");
+  background-position: center 0; }
 
 .title-section-content,
 .intro-section-content,

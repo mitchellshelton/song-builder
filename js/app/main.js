@@ -12,9 +12,17 @@ function setup() {
   // jQuery Actions
   jQuery(document).ready(function ($) {
 
-    $('.navigation-toggle a').click(function() {
+    $('body').on('click', '.navigation-toggle a', function(event) {
       $('.navigation').toggleClass('hidden');
-      return false;
+      event.preventDefault();
+    });
+
+    var parrallaxSpeed = 25;
+    $(window).on('scroll', function() {
+      introchange = 'background-position: center ' + ((window.pageYOffset)/parrallaxSpeed) + 'px';
+      builderchange = 'background-position: center ' + ((window.pageYOffset)/parrallaxSpeed) + 'px';
+      $('.intro-section-background').attr('style', introchange);
+      $('.builder-section-background').attr('style', builderchange);
     });
 
   });

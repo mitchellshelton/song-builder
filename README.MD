@@ -99,3 +99,85 @@
 - Output of the generator is done in the form of arrays displayed in tables. Notes then need to be manually entered into the Machinedrum and Monomachine. An automated export feature is not planned at this time.
 
 *This is simple display work*
+
+---
+
+### Melody Generation - Method One
+
+- The Parts
+  - Call
+    - 1/2 bar
+    - steps 1-8
+  - Response
+    - 1/2 bar
+    - steps 9-16
+  - Call Repetition
+    - 1/2 bar
+    - steps 17-24 (1-8: Measure 2)
+  - Response Variation
+    - 1/2 bar
+    - steps 25-32 (9-16: Measure 2)
+
+- Melody 1
+  - Call
+  - Call Repetition
+- Melody 2
+  - Call
+  - Response
+  - Call Repetition
+- Melody 3
+  - Call
+  - Call Repetition
+  - Response Variation
+
+- Other Notes
+  - All 3 sounds play call and call repetition
+  - Only Melody 2 and Melody 3 play responses
+  - 4-6 Notes for each part
+  - 4-8 Silent notes across each bar
+  - Melody silence positioning should be used in percussion
+
+> The Process
+
+1. Randomly generate call duration (4-6 notes)
+2. Randomly generate response duration (4-6 notes)
+3. Call - first note is root
+4. Response Variation - last note is root
+5. Generate Call based on low to high pattern
+  - root-mid-mid-high: 1, 4-5, 4-5, 6-7
+6. Generate Response based on high to low pattern
+  - high-low-mid-mid (no root): 6-7, 2-3, 4-5, 4-5
+7. Generate Response Variation
+  - high-low-mid-root: 6-7, 2-3, 4-5, 1
+8. Using Call and Response durations get silence duration
+9. Randomly generate rhythm based on silences
+
+> Much of the above outlined method is based on the following section for generating a "pleasing" pattern and the related progression pattern:
+
+```
+
+  // These are tonal steps for generating a "pleasing" pattern.
+  // The 1 represents the first note in the pattern with the numbers
+  // in the corresponding array representing the position of the next note.
+  // This can be used both for chord progressions and melody generation.
+  var steps = {
+    1: [1, 2, 3, 4, 5, 6, 7],
+    2: [4, 5, 7],
+    3: [2, 4, 6],
+    4: [1, 3, 5, 7],
+    5: [1],
+    6: [2, 4, 5, 1],
+    7: [1, 3]
+  };
+
+  // The numbers above correspond to the following chord progression patterns
+  chord_progression_pattern = {
+    // lower case i = minor, upper case I = major, * = diminished
+    "Major": ["I", "ii", "iii", "IV", "V", "vi", "vii*"],
+    "Minor": ["i", "ii*", "III", "iv", "v", "VI", "VII"]
+  };
+
+```
+
+---
+
